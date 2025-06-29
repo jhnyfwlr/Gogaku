@@ -9,6 +9,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 print("API key loaded:", openai.api_key is not None)
 
+# Defining the chatbot's role and scope. 
 def chat_with_gpt(prompt): 
     messages = [
         {
