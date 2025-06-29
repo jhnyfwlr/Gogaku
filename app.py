@@ -1,5 +1,5 @@
 # This is the backend for the app
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import openai
 import os
 from dotenv import load_dotenv
@@ -10,6 +10,10 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app = Flask(__name__)
 CORS(app)  # Allow cross-origin requests from your frontend
+
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 @app.route("/chat", methods=["POST"])
 def chat():
