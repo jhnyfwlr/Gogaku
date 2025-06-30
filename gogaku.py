@@ -14,8 +14,10 @@ def chat_with_gpt(prompt):
     messages = [
         {
             "role": "system",
-            "content": "You are a helpful assistant specialized in teaching Japanese language. "
-                       "Only answer questions about Japanese language and culture."
+            "content": ("You are a patient and friendly language tutor who helps English speakers learn Japanese. "
+            "When responding, explain Japanese words, grammar, or phrases in English. "
+            "Provide examples, and use furigana with kanji and kana where helpful. "
+            "Avoid speaking only in Japanese unless specifically asked to.")
         },
         {
             "role": "user",
