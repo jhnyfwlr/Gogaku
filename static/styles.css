@@ -1,13 +1,13 @@
 body {
-  background-color: #002451; /* dark navy */
-  color: #ffffff; /* white test for readability */
+  background-color: #002451;
+  color: #ffffff; 
   font-family: Arial, sans-serif;
   margin: 0;
   
 }
 
 .chat-container {
-  background-color: #001933; /* deep blue */
+  background-color: #001933; 
   width: 100%;
   max-width: 600px;
   margin: 50px auto;
@@ -27,13 +27,13 @@ body {
 
 .message {
   display: inline-block;
-  max-width: 80%;             /* prevent super long bubbles */
+  max-width: 80%;             
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
   word-wrap: break-word;
   white-space: pre-wrap;   
-  color: #ffffff;   /* preserve line breaks */
+  color: #ffffff;   
 }
 
 .user {
@@ -54,7 +54,7 @@ body {
 }
 
 input[type="text"] {
-  background-color: #00346e; /* dark input field */
+  background-color: #00346e; 
   font-size: 16px;
   color: #ffffff;
   flex: 1;
