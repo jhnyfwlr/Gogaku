@@ -10,7 +10,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 print("API key loaded:", openai.api_key is not None)
 
 # Defining the chatbot's role and scope. 
-def chat_with_gpt(prompt): 
+def chatWithGPT(prompt): 
     messages = [
         {
             "role": "system",
@@ -34,10 +34,10 @@ def chat_with_gpt(prompt):
 
 if __name__ == "__main__": 
     while True: 
-        user_input = input("You: ")
-        if user_input.lower() in ["quit", "exit", "bye"]: 
+        userInput = input("You: ")
+        if userInput.lower() in ["quit", "exit", "bye"]: 
             break
 
-        response = chat_with_gpt(user_input)
+        response = chatWithGPT(userInput)
         print("Chatbot: ", response)
         

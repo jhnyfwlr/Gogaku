@@ -18,7 +18,7 @@ def home():
 @app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json()
-    user_message = data.get("message", "")
+    userMessage = data.get("message", "")
 
     messages = [
         {
@@ -30,7 +30,7 @@ def chat():
         },
         {
             "role": "user",
-            "content": user_message
+            "content": userMessage
         }
     ]
 
