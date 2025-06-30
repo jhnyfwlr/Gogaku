@@ -18,12 +18,26 @@ def home():
 @app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json()
-    prompt = data.get("message", "")
+    user_message = data.get("message", "")
+
+    messages = [
+        {
+            "role": "system",
+            "content": ("You are a patient and friendly language tutor who helps English speakers learn Japanese. "
+            "When responding, explain Japanese words, grammar, or phrases in English. "
+            "Provide examples, and use furigana with kanji and kana where helpful. "
+            "Avoid speaking only in Japanese unless specifically asked to.")
+        },
+        {
+            "role": "user",
+            "content": user_message
+        }
+    ]
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4o",
-            messages=[{"role": "user", "content": prompt}]
+            model = "gpt-4o",
+            messages = messages
         )
         reply = response.choices[0].message.content.strip()
         return jsonify({"response": reply})
