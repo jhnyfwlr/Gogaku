@@ -9,19 +9,19 @@ _Instructions:_
 
 1. Clone the repository:
 
-      git clone https://github.com/jhnyfwlr/Gogaku.git
+      <pre>git clone https://github.com/jhnyfwlr/Gogaku.git</pre>
 
 2. Install dependencies (run this in the root directory):
    
-     pip install -r requirements.txt
+     <pre>pip install -r requirements.txt</pre>
 
 3. Create a .env file in the root directory with your OpenAI API key. It should look like this:
 
-      OPENAI_API_KEY=your_key_here
+      <pre>OPENAI_API_KEY=your_key_here</pre>
 
 4. Run the web application:
 
-<pre>python app.py</pre>
+      <pre>python app.py</pre>
 
 5. Open your browser and go to http://127.0.0.1:5000
 
