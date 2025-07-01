@@ -7,9 +7,11 @@ There are more features being worked on and this project is currently still deve
 
 _Instructions:_ 
 
-1. Clone the repository.
+1. Clone the repository:
 
-2. Install dependencies in the root directory folder from Terminal:
+      git clone https://github.com/jhnyfwlr/Gogaku.git
+
+3. Install dependencies in the root directory folder from Terminal:
    
      pip install -r requirements.txt
 
