@@ -11,17 +11,17 @@ _Instructions:_
 
       git clone https://github.com/jhnyfwlr/Gogaku.git
 
-3. Install dependencies in the root directory folder from Terminal:
+2.. Install dependencies (run this in the root directory):
    
      pip install -r requirements.txt
 
-4. Create a '.env' file and save it im the root directory folder. 
+3.Create a .env file in the root directory with your OpenAI API key. It should look like this:
 
-5. Create an API key at https://auth.openai.com/log-in and save it in the '.env' file. 
+      OPENAI_API_KEY=your_key_here
 
-6. Run the web application in Terminal:
+4. Run the web application:
 
      python app.py
 
-7. Open http://127.0.0.1:5000 on a Browser and enjoy! 
+5. Open your browser and go to http://127.0.0.1:5000
 
